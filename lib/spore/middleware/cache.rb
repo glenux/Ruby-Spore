@@ -24,7 +24,7 @@ class Spore ; class Middleware
 			if self.storage.include? key then
 				# get response from cache
 				env[CACHE_USED] = true
-				resp = HTTP::Message.new_response ""
+				resp = self.storage[key]
 				return resp
 			else
 				# really make the request
