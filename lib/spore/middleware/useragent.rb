@@ -18,7 +18,7 @@ class Spore
       end
 
       def process_response(resp, env)
-        env
+        resp
       end
 
     end
